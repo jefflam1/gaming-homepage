@@ -16,6 +16,7 @@ module.exports = {
       },
       fontFamily: {
         bebasNeue: ["var(--bebasNeue)"],
+        poppins: ["var(--poppins)"],
         pangolin: ["Pangolin"],
       },
     },

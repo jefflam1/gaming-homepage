@@ -1,5 +1,6 @@
 "use client";
 
+import useWindowSize from "@/app/hooks/useWindowSize";
 import { Carousel, Rate } from "antd";
 
 import Image from "next/image";
@@ -9,27 +10,8 @@ import Slide2 from "../public/slide2.png";
 import Slide3 from "../public/slide3.png";
 
 const Slider = () => {
-  const useWindowSize = () => {
-    const [width, setWidth] = useState(window.innerWidth);
-
-    useEffect(() => {
-      if (typeof window !== "undefined") {
-        const handleResize = () => {
-          setWidth(window.innerWidth);
-        };
-        window.addEventListener("resize", handleResize);
-
-        handleResize();
-
-        return () => window.removeEventListener("resize", handleResize);
-      }
-    }, []);
-
-    return width;
-  };
-
   const innerWidth = useWindowSize();
-  console.log(innerWidth);
+
   return (
     <div className="w-full mt-12 md:mt-20 justify-center items-center">
       {innerWidth < 460 ? (

@@ -16,9 +16,19 @@ const bebasNeue = localFont({
   variable: "--bebasNeue",
 });
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+const poppins = localFont({
+  src: "./font/Poppins-Regular.ttf",
+  display: "swap",
+  variable: "--poppins",
+});
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="en" className={`${bebasNeue.variable}`}>
+    <html lang="en" className={`${bebasNeue.variable} ${poppins.variable}`}>
       <body className={inter.className}>{children}</body>
     </html>
   );
