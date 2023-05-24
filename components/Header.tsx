@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import MainLogo from "../public/mainlogo.png";
-import Register from "../public/register.png";
+import RegisterBtn from "../public/register.png";
 
 const Header = () => {
   return (
@@ -22,7 +22,7 @@ const Header = () => {
       </div>
       <div>
         {" "}
-        <Image src={Register} alt={""} object-fit="contain" />
+        <Image src={RegisterBtn} alt={""} object-fit="contain" />
       </div>
     </div>
   );
