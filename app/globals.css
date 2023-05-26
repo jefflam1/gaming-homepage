@@ -21,15 +21,15 @@
 }
 
 @layer components {
-  .abc li button {
+  .customDots li button {
     @apply w-4 h-4 rounded-full bg-white opacity-100 !important;
   }
 
-  .abc li.slick-active  {
+  .customDots li.slick-active  {
     @apply w-4 !important;
   }
   
-  .abc li.slick-active button {
+  .customDots li.slick-active button {
     @apply w-4 bg-gradient-to-r from-[#C1260F] to-[#EE642A] !important;
   }
 

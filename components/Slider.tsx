@@ -15,7 +15,7 @@ const Slider = () => {
   return (
     <div className="w-full mt-12 md:mt-20 justify-center items-center">
       {innerWidth < 460 ? (
-        <Carousel arrows={false} dots={{ className: "abc" }}>
+        <Carousel arrows={false} dots={{ className: "customDots" }}>
           <div className="w-full  flex justify-center items-center">
             <Image
               src={Slide1}
@@ -42,7 +42,7 @@ const Slider = () => {
           </div>
         </Carousel>
       ) : (
-        <div className="flex flex-row justify-center space-x-4 items-center">
+        <div className="flex flex-row justify-center space-x-8 items-center">
           <div>
             <Image
               src={Slide1}

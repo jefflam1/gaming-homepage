@@ -43,7 +43,7 @@ const SecondContent = () => {
   const innerWidth = useWindowSize();
 
   return (
-    <div className="p-6 md:px-24 md:py-16 flex flex-col justify-center">
+    <div className="p-4 md:px-24 md:py-16 flex flex-col justify-center">
       <div className="flex flex-col justify-center items-center">
         <Image
           src={MiddleIcon}

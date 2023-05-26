@@ -21,5 +21,5 @@ module.exports = withMT({
       },
     },
   },
-  plugins: [],
+  plugins: [require("@shrutibalasa/tailwind-grid-auto-fit")],
 });
