@@ -22,13 +22,22 @@ const poppins = localFont({
   variable: "--poppins",
 });
 
+const nunito = localFont({
+  src: "./font/Nunito-ExtraLight.ttf",
+  display: "swap",
+  variable: "--nunito",
+});
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${bebasNeue.variable} ${poppins.variable}`}>
+    <html
+      lang="en"
+      className={`${bebasNeue.variable} ${poppins.variable} ${nunito.variable}`}
+    >
       <body className={inter.className}>{children}</body>
     </html>
   );

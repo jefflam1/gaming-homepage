@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import MainContent from "@/components/MainContent";
+import SecondContent from "@/components/SecondContent";
 import Slider from "@/components/Slider";
 import Title from "@/components/Title";
 
@@ -11,6 +12,7 @@ export default function Home() {
       <Title />
       <MainContent />
       <Slider />
+      <SecondContent />
       <Footer />
     </main>
   );

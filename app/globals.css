@@ -32,6 +32,14 @@
   .abc li.slick-active button {
     @apply w-4 bg-gradient-to-r from-[#C1260F] to-[#EE642A] !important;
   }
+
+  .ml-4 {
+    @apply hidden;
+  }
+
+  .text-blue-gray-900:hover {
+    @apply text-white;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
