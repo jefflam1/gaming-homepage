@@ -1,10 +1,9 @@
 "use client";
 
 import useWindowSize from "@/app/hooks/useWindowSize";
-import { Carousel, Rate } from "antd";
+import { Carousel } from "antd";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
 import Slide1 from "../public/slide1.png";
 import Slide2 from "../public/slide2.png";
 import Slide3 from "../public/slide3.png";

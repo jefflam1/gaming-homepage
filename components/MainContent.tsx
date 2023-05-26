@@ -1,5 +1,4 @@
 import Image from "next/image";
-
 import Image1 from "../public/image1.png";
 import RightIcon from "../public/rightIcon.png";
 
