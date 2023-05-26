@@ -67,6 +67,7 @@ const SecondContent = () => {
           <>
             {content.map((c, index) => (
               <Accordion
+                key={index + 1}
                 onClick={() => handleOpen(index + 1)}
                 open={open === index + 1}
                 className="border-none bg-transparent my-2"
